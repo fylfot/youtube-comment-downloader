@@ -118,7 +118,7 @@ class YoutubeCommentDownloader:
 
                 try:
                     result['time_parsed'] = dateparser.parse(result['time'].split('(')[0].strip()).timestamp()
-                except AttributeError:
+                except:
                     pass
 
                 paid = (
